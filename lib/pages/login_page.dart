@@ -2,6 +2,7 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:nearbyevcharging/api/api_services.dart';
 import 'package:nearbyevcharging/components/forgot_password_page.dart';
 import 'package:nearbyevcharging/pages/home_page.dart';
 import 'package:nearbyevcharging/pages/signup_page.dart';
@@ -145,10 +146,11 @@ class _LoginPageState extends State<LoginPage> {
                     ]),
                     GestureDetector(
                         onTap: () {
-                          Navigator.push(context,
-                              MaterialPageRoute(builder: (context) {
-                                return const Home();
-                              }));
+                          callLoginApi();
+                          // Navigator.push(context,
+                          //     MaterialPageRoute(builder: (context) {
+                          //       return const Home();
+                          //     }));
                         },
                         child: Container(
                             width: 150,
@@ -272,4 +274,22 @@ class _LoginPageState extends State<LoginPage> {
                   ])),
             ])));
   }
+
+  callLoginApi() {
+    final service = APIServices();
+    service.userSignup(
+      {
+        //"mobileNumber": "98106590381",
+        "mobileNumber": mobileNoEditingController.text,
+        "countryCode": "+91",
+        //"password": "12345678",
+        "password": passwordEditingController.text,
+      },
+    ).then((value) {
+      if (value.error != null) {
+        print("get data >>>>>>>" + value.error!);
+      }
+    });
+  }
 }
+

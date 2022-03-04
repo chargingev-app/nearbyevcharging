@@ -324,7 +324,7 @@ class _MyVehiclesState extends State<MyVehicles> {
               color: Colors.white,
               height: MediaQuery.of(context).size.height * .35,
               child: Column(children: <Widget>[
-                const SizedBox(height:20),
+                const SizedBox(height: 20),
                 Text('Remove Vehicle?',
                     style: GoogleFonts.poppins(
                         color: Colors.black,

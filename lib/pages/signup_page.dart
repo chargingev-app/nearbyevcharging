@@ -2,6 +2,7 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:nearbyevcharging/api/api_services.dart';
 import 'package:nearbyevcharging/pages/login_page.dart';
 
 class SignupPage extends StatefulWidget {
@@ -175,7 +176,9 @@ class _SignupPageState extends State<SignupPage> {
                             passwordField,
                           ]))),
               GestureDetector(
-                  onTap: () {},
+                  onTap: () {
+                    callSignupApi();
+                  },
                   child: Container(
                       alignment: Alignment.center,
                       padding: const EdgeInsets.all(10),
@@ -294,5 +297,26 @@ class _SignupPageState extends State<SignupPage> {
                           }),
                   ])),
             ])));
+  }
+
+  callSignupApi() {
+    final service = APIServices();
+    service.userSignup(
+      {
+        //"mobileNumber": "98106590381",
+        "mobileNumber": mobileNoEditingController.text,
+        "countryCode": "+91",
+        //"password": "12345678",
+        "password": passwordEditingController.text,
+        //"email": "skbhati1990@gmail.com",
+        "email": emailEditingController.text,
+        "deviceType": "1",
+        "userType": "3"
+      },
+    ).then((value) {
+      if (value.error != null) {
+        print("get data >>>>>>>" + value.error!);
+      }
+    });
   }
 }

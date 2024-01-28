@@ -1,7 +1,7 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:nearbyevcharging/pages/login_page.dart';
+import 'package:flutterevcharging/pages/login_page.dart';
 
 class WelcomePage extends StatefulWidget {
   const WelcomePage({Key? key}) : super(key: key);
@@ -20,7 +20,7 @@ class _WelcomePageState extends State<WelcomePage> {
           child: Column(children: <Widget>[
             Container(
                 width: MediaQuery.of(context).size.width,
-               height: MediaQuery.of(context).size.height / 2.5,
+                height: MediaQuery.of(context).size.height / 2.5,
                 decoration: const BoxDecoration(
                     image: DecorationImage(
                         image: AssetImage(

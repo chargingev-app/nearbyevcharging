@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:nearbyevcharging/components/reset_password.dart';
-import 'package:nearbyevcharging/components/update_emailid.dart';
-import 'package:nearbyevcharging/components/update_mobile_no.dart';
-import 'package:nearbyevcharging/components/update_pincode.dart';
-import 'package:nearbyevcharging/components/updatename.dart';
+import 'package:flutterevcharging/components/reset_password.dart';
+import 'package:flutterevcharging/components/update_emailid.dart';
+import 'package:flutterevcharging/components/update_mobile_no.dart';
+import 'package:flutterevcharging/components/update_pincode.dart';
+import 'package:flutterevcharging/components/updatename.dart';
 
 class MyProfile extends StatefulWidget {
   const MyProfile({Key? key}) : super(key: key);

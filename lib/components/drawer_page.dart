@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:nearbyevcharging/pages/charging_details_page.dart';
-import 'package:nearbyevcharging/pages/transaction_history_page.dart';
-import 'package:nearbyevcharging/pages/help_page.dart';
-import 'package:nearbyevcharging/pages/login_page.dart';
-import 'package:nearbyevcharging/pages/my_bookings_pages.dart';
-import 'package:nearbyevcharging/pages/my_profile_page.dart';
-import 'package:nearbyevcharging/pages/my_vehicles_page.dart';
-import 'package:nearbyevcharging/pages/payment_methods_page.dart';
-import 'package:nearbyevcharging/pages/stations_page.dart';
+import 'package:flutterevcharging/pages/charging_details_page.dart';
+import 'package:flutterevcharging/pages/transaction_history_page.dart';
+import 'package:flutterevcharging/pages/help_page.dart';
+import 'package:flutterevcharging/pages/login_page.dart';
+import 'package:flutterevcharging/pages/my_bookings_pages.dart';
+import 'package:flutterevcharging/pages/my_profile_page.dart';
+import 'package:flutterevcharging/pages/my_vehicles_page.dart';
+import 'package:flutterevcharging/pages/payment_methods_page.dart';
+import 'package:flutterevcharging/pages/stations_page.dart';
 
 class DrawerScreen extends StatefulWidget {
   const DrawerScreen({Key? key}) : super(key: key);
@@ -90,8 +90,8 @@ class _DrawerScreenState extends State<DrawerScreen> {
                             onTap: () {
                               Navigator.push(context,
                                   MaterialPageRoute(builder: (context) {
-                                    return const ChargingDetails();
-                                  }));
+                                return const ChargingDetails();
+                              }));
                             }),
                         const SizedBox(height: 25),
                         GestureDetector(
@@ -108,14 +108,17 @@ class _DrawerScreenState extends State<DrawerScreen> {
                             onTap: () {
                               Navigator.push(context,
                                   MaterialPageRoute(builder: (context) {
-                                    return const ChargingHistory();
-                                  }));
+                                return const ChargingHistory();
+                              }));
                             }),
                         const SizedBox(height: 25),
                         GestureDetector(
                             child: Row(children: <Widget>[
-                              Image.asset("assets/icons/charging-station (1).png",
-                                  color: Colors.green, height: 20, width: 20),
+                              Image.asset(
+                                  "assets/icons/charging-station (1).png",
+                                  color: Colors.green,
+                                  height: 20,
+                                  width: 20),
                               const SizedBox(width: 10),
                               Text('Stations',
                                   style: GoogleFonts.poppins(
@@ -126,8 +129,8 @@ class _DrawerScreenState extends State<DrawerScreen> {
                             onTap: () {
                               Navigator.push(context,
                                   MaterialPageRoute(builder: (context) {
-                                    return const Stations();
-                                  }));
+                                return const Stations();
+                              }));
                             }),
                         const SizedBox(height: 25),
                         GestureDetector(
@@ -144,8 +147,8 @@ class _DrawerScreenState extends State<DrawerScreen> {
                             onTap: () {
                               Navigator.push(context,
                                   MaterialPageRoute(builder: (context) {
-                                    return const MyVehicles();
-                                  }));
+                                return const MyVehicles();
+                              }));
                             }),
                         const SizedBox(height: 25),
                         GestureDetector(
@@ -162,8 +165,8 @@ class _DrawerScreenState extends State<DrawerScreen> {
                             onTap: () {
                               Navigator.push(context,
                                   MaterialPageRoute(builder: (context) {
-                                    return const PaymentMethods();
-                                  }));
+                                return const PaymentMethods();
+                              }));
                             }),
                         const SizedBox(height: 25),
                         GestureDetector(
@@ -180,8 +183,8 @@ class _DrawerScreenState extends State<DrawerScreen> {
                             onTap: () {
                               Navigator.push(context,
                                   MaterialPageRoute(builder: (context) {
-                                    return const MyBookings();
-                                  }));
+                                return const MyBookings();
+                              }));
                             }),
                         const SizedBox(height: 25),
                         GestureDetector(

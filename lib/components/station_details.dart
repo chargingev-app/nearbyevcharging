@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:nearbyevcharging/components/booking.dart';
+import 'package:flutterevcharging/components/booking.dart';
 
 class StationDetails extends StatefulWidget {
   const StationDetails({Key? key}) : super(key: key);
@@ -13,7 +13,7 @@ class _StationDetailsState extends State<StationDetails> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor : Colors.white,
+      backgroundColor: Colors.white,
       appBar: AppBar(
         backgroundColor: Colors.white,
         leading: IconButton(
@@ -120,8 +120,8 @@ class _StationDetailsState extends State<StationDetails> {
                         onTap: () {
                           Navigator.push(context,
                               MaterialPageRoute(builder: (context) {
-                                return const Booking();
-                              }));
+                            return const Booking();
+                          }));
                         },
                         child: Container(
                             alignment: Alignment.center,

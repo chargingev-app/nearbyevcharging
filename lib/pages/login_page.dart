@@ -2,10 +2,10 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:nearbyevcharging/api/api_services.dart';
-import 'package:nearbyevcharging/components/forgot_password_page.dart';
-import 'package:nearbyevcharging/pages/home_page.dart';
-import 'package:nearbyevcharging/pages/signup_page.dart';
+import 'package:flutterevcharging/api/api_services.dart';
+import 'package:flutterevcharging/components/forgot_password_page.dart';
+import 'package:flutterevcharging/pages/home_page.dart';
+import 'package:flutterevcharging/pages/signup_page.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -21,7 +21,6 @@ class _LoginPageState extends State<LoginPage> {
   bool value1 = false;
   @override
   Widget build(BuildContext context) {
-
     final passwordField = TextFormField(
         autofocus: false,
         controller: passwordEditingController,
@@ -53,9 +52,8 @@ class _LoginPageState extends State<LoginPage> {
         controller: mobileNoEditingController,
         keyboardType: TextInputType.number,
         textInputAction: TextInputAction.next,
-        validator: (input) => input!.length < 10
-            ? "Mobile number should be  10 numbers"
-            : null,
+        validator: (input) =>
+            input!.length < 10 ? "Mobile number should be  10 numbers" : null,
         decoration: InputDecoration(
             hintText: "Enter Mobile No ",
             hintStyle: GoogleFonts.poppins(
@@ -158,8 +156,8 @@ class _LoginPageState extends State<LoginPage> {
                             padding: const EdgeInsets.all(10),
                             decoration: const BoxDecoration(
                                 color: Colors.green,
-                                borderRadius: BorderRadius.all(
-                                    Radius.circular(10))),
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(10))),
                             child: Text("Login",
                                 style: GoogleFonts.poppins(
                                     color: Colors.white,
@@ -292,4 +290,3 @@ class _LoginPageState extends State<LoginPage> {
     });
   }
 }
-

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:nearbyevcharging/components/time_filter.dart';
+import 'package:flutterevcharging/components/time_filter.dart';
 
 class ChargingHistory extends StatefulWidget {
   const ChargingHistory({Key? key}) : super(key: key);

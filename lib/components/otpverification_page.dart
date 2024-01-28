@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:nearbyevcharging/components/reset_password_page.dart';
+import 'package:flutterevcharging/components/reset_password_page.dart';
 import 'package:otp_text_field/otp_field.dart';
 import 'package:otp_text_field/style.dart';
 
@@ -38,8 +38,10 @@ class _OTPVerificationState extends State<OTPVerification> {
                 child: Column(
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: <Widget>[
-                      Image.asset("assets/images/Fast-and-scalable-OTP-system-Graphics.png",
-                          height: 200, width: 200),
+                      Image.asset(
+                          "assets/images/Fast-and-scalable-OTP-system-Graphics.png",
+                          height: 200,
+                          width: 200),
                       const SizedBox(height: 20),
                       Text(
                           'Enter the 4 digits code that you received on your mobile number.',

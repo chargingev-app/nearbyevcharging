@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:nearbyevcharging/components/add_vehicle.dart';
+import 'package:flutterevcharging/components/add_vehicle.dart';
 
 class MyVehicles extends StatefulWidget {
   const MyVehicles({Key? key}) : super(key: key);

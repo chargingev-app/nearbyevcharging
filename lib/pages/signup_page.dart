@@ -2,8 +2,8 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:nearbyevcharging/api/api_services.dart';
-import 'package:nearbyevcharging/pages/login_page.dart';
+import 'package:flutterevcharging/api/api_services.dart';
+import 'package:flutterevcharging/pages/login_page.dart';
 
 class SignupPage extends StatefulWidget {
   const SignupPage({Key? key}) : super(key: key);

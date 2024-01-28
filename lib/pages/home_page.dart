@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:nearbyevcharging/components/drawer_page.dart';
-import 'package:nearbyevcharging/components/map_page.dart';
+import 'package:flutterevcharging/components/drawer_page.dart';
+import 'package:flutterevcharging/components/map_page.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);

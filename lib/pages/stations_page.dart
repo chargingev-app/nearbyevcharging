@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:nearbyevcharging/components/station_details.dart';
+import 'package:flutterevcharging/components/station_details.dart';
 
 class Stations extends StatefulWidget {
   const Stations({Key? key}) : super(key: key);
@@ -280,8 +280,8 @@ class _StationsState extends State<Stations> {
                       onTap: () {
                         Navigator.push(context,
                             MaterialPageRoute(builder: (context) {
-                              return const StationDetails();
-                            }));
+                          return const StationDetails();
+                        }));
                       },
                       child: Card(
                           margin: const EdgeInsets.symmetric(vertical: 15),
@@ -301,7 +301,7 @@ class _StationsState extends State<Stations> {
                                       borderRadius: BorderRadius.all(
                                           Radius.circular(10))),
                                   child:
-                                  Stack(clipBehavior: Clip.none, children: [
+                                      Stack(clipBehavior: Clip.none, children: [
                                     Positioned(
                                         bottom: 5,
                                         left: 5,
@@ -319,7 +319,7 @@ class _StationsState extends State<Stations> {
                                                     color: Colors.white,
                                                     fontSize: 10,
                                                     fontWeight:
-                                                    FontWeight.w500)))),
+                                                        FontWeight.w500)))),
                                   ])),
                               const SizedBox(width: 15),
                               Column(
@@ -341,8 +341,8 @@ class _StationsState extends State<Stations> {
                                           padding: const EdgeInsets.all(3),
                                           decoration: BoxDecoration(
                                               borderRadius:
-                                              const BorderRadius.all(
-                                                  Radius.circular(5)),
+                                                  const BorderRadius.all(
+                                                      Radius.circular(5)),
                                               border: Border.all(
                                                   color: Colors.black45,
                                                   width: 1)),
@@ -356,8 +356,8 @@ class _StationsState extends State<Stations> {
                                           padding: const EdgeInsets.all(3),
                                           decoration: BoxDecoration(
                                               borderRadius:
-                                              const BorderRadius.all(
-                                                  Radius.circular(5)),
+                                                  const BorderRadius.all(
+                                                      Radius.circular(5)),
                                               border: Border.all(
                                                   color: Colors.black45,
                                                   width: 1)),
@@ -374,8 +374,8 @@ class _StationsState extends State<Stations> {
                       onTap: () {
                         Navigator.push(context,
                             MaterialPageRoute(builder: (context) {
-                              return const StationDetails();
-                            }));
+                          return const StationDetails();
+                        }));
                       },
                       child: Card(
                           margin: const EdgeInsets.symmetric(vertical: 15),
@@ -385,11 +385,11 @@ class _StationsState extends State<Stations> {
                             padding: const EdgeInsets.all(10),
                             child: Row(
                                 mainAxisAlignment:
-                                MainAxisAlignment.spaceBetween,
+                                    MainAxisAlignment.spaceBetween,
                                 children: <Widget>[
                                   Column(
                                       crossAxisAlignment:
-                                      CrossAxisAlignment.start,
+                                          CrossAxisAlignment.start,
                                       children: <Widget>[
                                         Text("Walmart Greenville AL",
                                             style: GoogleFonts.poppins(
@@ -407,8 +407,8 @@ class _StationsState extends State<Stations> {
                                               padding: const EdgeInsets.all(3),
                                               decoration: BoxDecoration(
                                                   borderRadius:
-                                                  const BorderRadius.all(
-                                                      Radius.circular(5)),
+                                                      const BorderRadius.all(
+                                                          Radius.circular(5)),
                                                   border: Border.all(
                                                       color: Colors.black45,
                                                       width: 1)),
@@ -422,8 +422,8 @@ class _StationsState extends State<Stations> {
                                               padding: const EdgeInsets.all(3),
                                               decoration: BoxDecoration(
                                                   borderRadius:
-                                                  const BorderRadius.all(
-                                                      Radius.circular(5)),
+                                                      const BorderRadius.all(
+                                                          Radius.circular(5)),
                                                   border: Border.all(
                                                       color: Colors.black45,
                                                       width: 1)),
@@ -455,22 +455,22 @@ class _StationsState extends State<Stations> {
                                                     height: 30,
                                                     width: 30,
                                                     decoration:
-                                                    const BoxDecoration(
+                                                        const BoxDecoration(
                                                       color: Colors.blue,
                                                       borderRadius:
-                                                      BorderRadius.all(
-                                                          Radius.circular(
-                                                              10)),
+                                                          BorderRadius.all(
+                                                              Radius.circular(
+                                                                  10)),
                                                     ),
                                                     child: Text("4.0",
                                                         style:
-                                                        GoogleFonts.poppins(
-                                                            color: Colors
-                                                                .white,
-                                                            fontSize: 10,
-                                                            fontWeight:
-                                                            FontWeight
-                                                                .w500)))),
+                                                            GoogleFonts.poppins(
+                                                                color: Colors
+                                                                    .white,
+                                                                fontSize: 10,
+                                                                fontWeight:
+                                                                    FontWeight
+                                                                        .w500)))),
                                           ])),
                                 ]),
                           ))),
@@ -478,8 +478,8 @@ class _StationsState extends State<Stations> {
                       onTap: () {
                         Navigator.push(context,
                             MaterialPageRoute(builder: (context) {
-                              return const StationDetails();
-                            }));
+                          return const StationDetails();
+                        }));
                       },
                       child: Card(
                           margin: const EdgeInsets.symmetric(vertical: 15),
@@ -499,7 +499,7 @@ class _StationsState extends State<Stations> {
                                       borderRadius: BorderRadius.all(
                                           Radius.circular(10))),
                                   child:
-                                  Stack(clipBehavior: Clip.none, children: [
+                                      Stack(clipBehavior: Clip.none, children: [
                                     Positioned(
                                         bottom: 5,
                                         left: 5,
@@ -517,7 +517,7 @@ class _StationsState extends State<Stations> {
                                                     color: Colors.white,
                                                     fontSize: 10,
                                                     fontWeight:
-                                                    FontWeight.w500)))),
+                                                        FontWeight.w500)))),
                                   ])),
                               const SizedBox(width: 15),
                               Column(
@@ -539,8 +539,8 @@ class _StationsState extends State<Stations> {
                                           padding: const EdgeInsets.all(3),
                                           decoration: BoxDecoration(
                                               borderRadius:
-                                              const BorderRadius.all(
-                                                  Radius.circular(5)),
+                                                  const BorderRadius.all(
+                                                      Radius.circular(5)),
                                               border: Border.all(
                                                   color: Colors.black45,
                                                   width: 1)),
@@ -554,8 +554,8 @@ class _StationsState extends State<Stations> {
                                           padding: const EdgeInsets.all(3),
                                           decoration: BoxDecoration(
                                               borderRadius:
-                                              const BorderRadius.all(
-                                                  Radius.circular(5)),
+                                                  const BorderRadius.all(
+                                                      Radius.circular(5)),
                                               border: Border.all(
                                                   color: Colors.black45,
                                                   width: 1)),
@@ -572,8 +572,8 @@ class _StationsState extends State<Stations> {
                       onTap: () {
                         Navigator.push(context,
                             MaterialPageRoute(builder: (context) {
-                              return const StationDetails();
-                            }));
+                          return const StationDetails();
+                        }));
                       },
                       child: Card(
                           margin: const EdgeInsets.symmetric(vertical: 15),
@@ -583,11 +583,11 @@ class _StationsState extends State<Stations> {
                             padding: const EdgeInsets.all(10),
                             child: Row(
                                 mainAxisAlignment:
-                                MainAxisAlignment.spaceBetween,
+                                    MainAxisAlignment.spaceBetween,
                                 children: <Widget>[
                                   Column(
                                       crossAxisAlignment:
-                                      CrossAxisAlignment.start,
+                                          CrossAxisAlignment.start,
                                       children: <Widget>[
                                         Text("Walmart Greenville AL",
                                             style: GoogleFonts.poppins(
@@ -605,8 +605,8 @@ class _StationsState extends State<Stations> {
                                               padding: const EdgeInsets.all(3),
                                               decoration: BoxDecoration(
                                                   borderRadius:
-                                                  const BorderRadius.all(
-                                                      Radius.circular(5)),
+                                                      const BorderRadius.all(
+                                                          Radius.circular(5)),
                                                   border: Border.all(
                                                       color: Colors.black45,
                                                       width: 1)),
@@ -620,8 +620,8 @@ class _StationsState extends State<Stations> {
                                               padding: const EdgeInsets.all(3),
                                               decoration: BoxDecoration(
                                                   borderRadius:
-                                                  const BorderRadius.all(
-                                                      Radius.circular(5)),
+                                                      const BorderRadius.all(
+                                                          Radius.circular(5)),
                                                   border: Border.all(
                                                       color: Colors.black45,
                                                       width: 1)),
@@ -653,22 +653,22 @@ class _StationsState extends State<Stations> {
                                                     height: 30,
                                                     width: 30,
                                                     decoration:
-                                                    const BoxDecoration(
+                                                        const BoxDecoration(
                                                       color: Colors.blue,
                                                       borderRadius:
-                                                      BorderRadius.all(
-                                                          Radius.circular(
-                                                              10)),
+                                                          BorderRadius.all(
+                                                              Radius.circular(
+                                                                  10)),
                                                     ),
                                                     child: Text("4.0",
                                                         style:
-                                                        GoogleFonts.poppins(
-                                                            color: Colors
-                                                                .white,
-                                                            fontSize: 10,
-                                                            fontWeight:
-                                                            FontWeight
-                                                                .w500)))),
+                                                            GoogleFonts.poppins(
+                                                                color: Colors
+                                                                    .white,
+                                                                fontSize: 10,
+                                                                fontWeight:
+                                                                    FontWeight
+                                                                        .w500)))),
                                           ])),
                                 ]),
                           ))),

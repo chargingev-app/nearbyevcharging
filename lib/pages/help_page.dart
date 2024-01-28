@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:nearbyevcharging/components/sendus_mail.dart';
+import 'package:flutterevcharging/components/sendus_mail.dart';
 
 class HelpSupport extends StatefulWidget {
   const HelpSupport({Key? key}) : super(key: key);
@@ -48,7 +48,8 @@ class _HelpSupportState extends State<HelpSupport> {
                               Image.asset("assets/icons/skip-track.png",
                                   color: Colors.green, height: 20, width: 20),
                             ]),
-                        const Divider(height: 60, thickness: 1, color: Colors.black26),
+                        const Divider(
+                            height: 60, thickness: 1, color: Colors.black26),
                         Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: <Widget>[
@@ -61,16 +62,19 @@ class _HelpSupportState extends State<HelpSupport> {
                               Image.asset("assets/icons/skip-track.png",
                                   color: Colors.green, height: 20, width: 20),
                             ]),
-                        const Divider(height: 60, thickness: 1, color: Colors.black26),
+                        const Divider(
+                            height: 60, thickness: 1, color: Colors.black26),
                       ]),
                   Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: <Widget>[
                         GestureDetector(
-                            onTap: () {Navigator.push(context,
-                                MaterialPageRoute(builder: (context) {
-                                  return const SendMail();
-                                }));},
+                            onTap: () {
+                              Navigator.push(context,
+                                  MaterialPageRoute(builder: (context) {
+                                return const SendMail();
+                              }));
+                            },
                             child: Container(
                                 alignment: Alignment.center,
                                 width: MediaQuery.of(context).size.width / 2.5,

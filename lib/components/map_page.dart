@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:nearbyevcharging/components/filter_page.dart';
-import 'package:nearbyevcharging/components/google_map.dart';
-import 'package:nearbyevcharging/components/notification.dart';
-import 'package:nearbyevcharging/components/scanqr_page.dart';
+import 'package:flutterevcharging/components/filter_page.dart';
+import 'package:flutterevcharging/components/google_map.dart';
+import 'package:flutterevcharging/components/notification.dart';
+import 'package:flutterevcharging/components/scanqr_page.dart';
 
 class MapScreen extends StatefulWidget {
   const MapScreen({Key? key}) : super(key: key);

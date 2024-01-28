@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
-import 'package:nearbyevcharging/components/station_details.dart';
+import 'package:flutterevcharging/components/station_details.dart';
 
 class Google_Map extends StatefulWidget {
   const Google_Map({Key? key}) : super(key: key);

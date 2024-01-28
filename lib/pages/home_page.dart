@@ -13,9 +13,35 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: Stack(children: const [
-      DrawerScreen(),
-      MapScreen(),
-    ]));
+        appBar: AppBar(
+          // menu icon and avatar
+          leading: Builder(
+            builder: (BuildContext context) {
+              return Container(
+                child: GestureDetector(
+                  onTap: () => Scaffold.of(context).openDrawer(),
+                  child: const SizedBox(
+                    child: CircleAvatar(
+                      backgroundImage:
+                          AssetImage('assets/images/images (5).jpeg'),
+                      radius: 10,
+                    ),
+                  ),
+                ),
+              );
+            },
+          ),
+          title: const Text('EV Charging'),
+          backgroundColor: Colors.green,
+        ),
+        drawer: const DrawerScreen(),
+        body: Container(
+          padding: const EdgeInsets.all(40),
+          child: Container(
+            child: Stack(children: [
+              MapScreen(),
+            ]),
+          ),
+        ));
   }
 }

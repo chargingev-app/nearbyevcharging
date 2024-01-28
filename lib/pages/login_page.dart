@@ -144,11 +144,11 @@ class _LoginPageState extends State<LoginPage> {
                     ]),
                     GestureDetector(
                         onTap: () {
-                          callLoginApi();
-                          // Navigator.push(context,
-                          //     MaterialPageRoute(builder: (context) {
-                          //       return const Home();
-                          //     }));
+                          // callLoginApi();
+                          Navigator.push(context,
+                              MaterialPageRoute(builder: (context) {
+                            return const Home();
+                          }));
                         },
                         child: Container(
                             width: 150,

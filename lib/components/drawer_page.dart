@@ -22,28 +22,17 @@ class _DrawerScreenState extends State<DrawerScreen> {
   Widget build(BuildContext context) {
     return SingleChildScrollView(
         child: Container(
+            margin: const EdgeInsets.only(top: 40),
+            width: MediaQuery.of(context).size.width * 0.75,
             height: MediaQuery.of(context).size.height,
             color: Colors.green[100],
             child: Padding(
-                padding: const EdgeInsets.only(top: 30, left: 10, bottom: 10),
+                padding: const EdgeInsets.only(top: 20, left: 10, bottom: 10),
                 child: Column(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: <Widget>[
                       Column(children: <Widget>[
                         Row(children: <Widget>[
-                          Container(
-                              height: 70,
-                              width: 70,
-                              decoration: BoxDecoration(
-                                  image: const DecorationImage(
-                                      image: AssetImage(
-                                          'assets/images/images (5).jpeg'),
-                                      fit: BoxFit.cover),
-                                  borderRadius: const BorderRadius.all(
-                                      Radius.circular(100)),
-                                  border: Border.all(
-                                      color: Colors.green, width: 2))),
-                          const SizedBox(width: 10),
                           Column(children: <Widget>[
                             Text('Clark Mirosalava',
                                 style: GoogleFonts.poppins(
@@ -227,22 +216,21 @@ class _DrawerScreenState extends State<DrawerScreen> {
                             }),
                         const Divider(
                             thickness: 2, height: 20, color: Colors.black26),
-                        Row(children: <Widget>[
-                          Text('Privacy Policy',
-                              style: GoogleFonts.poppins(
-                                  color: Colors.black54,
-                                  fontSize: 15,
-                                  fontWeight: FontWeight.w500)),
-                          const SizedBox(width: 15),
-                          Container(
-                              height: 15, width: 2, color: Colors.black54),
-                          const SizedBox(width: 15),
-                          Text('Terms & Conditions',
-                              style: GoogleFonts.poppins(
-                                  color: Colors.black54,
-                                  fontSize: 15,
-                                  fontWeight: FontWeight.w500)),
-                        ]),
+                        Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: <Widget>[
+                              Text('Privacy Policy',
+                                  style: GoogleFonts.poppins(
+                                      color: Colors.black54,
+                                      fontSize: 15,
+                                      fontWeight: FontWeight.w500)),
+                              const SizedBox(width: 15),
+                              Text('Terms & Conditions',
+                                  style: GoogleFonts.poppins(
+                                      color: Colors.black54,
+                                      fontSize: 15,
+                                      fontWeight: FontWeight.w500)),
+                            ]),
                       ]),
                     ]))));
   }
